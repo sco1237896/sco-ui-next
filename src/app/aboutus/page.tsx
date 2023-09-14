@@ -1,10 +1,9 @@
-import React from 'react'
+'use client'
+
+import React from "react";
 
 const Aboutus = () => {
-  return (
-    <div>Aboutus</div>
-  )
-}
+  return <div>Aboutus</div>;
+};
 
-export default Aboutus
-
+export default Aboutus;
