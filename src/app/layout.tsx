@@ -1,3 +1,4 @@
+'use client'
 import "@patternfly/patternfly/patternfly.css";
 
 export default function RootLayout({
