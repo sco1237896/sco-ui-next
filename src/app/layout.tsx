@@ -1,6 +1,9 @@
 'use client'
 
 import "@patternfly/patternfly/patternfly.css";
+import "@kaoto-next/ui/style.css";
+
+import Script from 'next/script';
 
 export default function RootLayout({
   children,
@@ -9,7 +12,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+
+        <Script strategy='beforeInteractive'>
+          {/* Temporary workaround for @patternfly/react-topology using global */}
+          {`window.global ||= window;`}
+        </Script>
+      </body>
     </html>
   );
 }
