@@ -152,6 +152,11 @@ export default function Home() {
                     Server
                   </a>
                 </li>
+                <li className="pf-v5-c-nav__item">
+                  <a href="/playground" className="pf-v5-c-nav__link">
+                    Playground
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
