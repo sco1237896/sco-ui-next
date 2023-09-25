@@ -4,7 +4,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { ITile } from "../../../../kaoto-next/packages/ui/src/components/Catalog/Catalog.models";
 
 export default {
-  title: 'Playground',
+  title: 'Pages/Playground',
   component: PlaygroundPage,
 } as Meta<typeof PlaygroundPage>;
 
