@@ -3,9 +3,7 @@ import { Card, CardBody, CardTitle } from '@patternfly/react-core';
 import { Catalog, ITile } from '@kaoto-next/ui';
 import { useCallback } from 'react';
 
-export interface IPlaygroundPage {}
-
-export default function PlaygroundPage({}: IPlaygroundPage) {
+export default function PlaygroundPage() {
 
   const tiles: Record<string, Array<ITile<string>>> = {
     Group1: [
