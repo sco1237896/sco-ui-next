@@ -28,4 +28,5 @@ export const basic = () => {
         }, []);
 
     return (<Catalog tiles={tiles} onTileClick={onTileClick} />);
+    // return (<Catalog tiles={tiles} onTileClick={() => {}} />);
 }
