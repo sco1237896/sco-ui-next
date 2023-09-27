@@ -15,7 +15,7 @@ export default function RootLayout({
       <body>
         {children}
 
-        <Script strategy='beforeInteractive'>
+        <Script strategy='beforeInteractive' id={'patternfly-workaround'}>
           {/* Temporary workaround for @patternfly/react-topology using global */}
           {`window.global ||= window;`}
         </Script>

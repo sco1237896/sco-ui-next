@@ -6,13 +6,14 @@ export default {
 
 
 export const basic = () => {
-    const [text, setText] = useState("hello");
+    // const [text, setText] = useState("hello");
 
     function buttonHandler(event) {
-        setText("Hola");
+        // setText("Hola");
         console.log("hello");
 
     }
     
-    return <div><button onClick={buttonHandler}>{text}</button></div>;
+    // return <div><button onClick={buttonHandler}>{text}</button></div>;
+    return <div></div>;
 }

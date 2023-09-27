@@ -1,5 +1,4 @@
 import { Catalog, ITile } from '@kaoto-next/ui';
-import React, { useCallback } from 'react';
 import { Meta, StoryFn } from "@storybook/react";
 
 export default {
