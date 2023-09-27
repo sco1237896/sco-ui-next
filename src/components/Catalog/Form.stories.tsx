@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { Meta } from "@storybook/react";
 
 export default {
     title: "Form/Button"
-}
+} as Meta<typeof Button>;
 
-
-export const basic = () => {
+export const Button = () => {
     // const [text, setText] = useState("hello");
 
     function buttonHandler(event) {
