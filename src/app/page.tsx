@@ -157,6 +157,11 @@ export default function Home() {
                     Playground
                   </a>
                 </li>
+                <li className="pf-v5-c-nav__item">
+                  <a href="/connectors/create-flow" className="pf-v5-c-nav__link">
+                    Connectors
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
