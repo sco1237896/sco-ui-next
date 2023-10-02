@@ -1,14 +1,17 @@
-'use client';
+"use client";
 import {
-  Button, Masthead,
+  Button,
+  Masthead,
   MastheadMain,
-  Nav, NavItem,
+  Nav,
+  NavItem,
   NavList,
   Page,
   PageSidebar,
   PageSidebarBody,
   Toolbar,
-  ToolbarContent, ToolbarGroup,
+  ToolbarContent,
+  ToolbarGroup,
   ToolbarItem
 } from "@patternfly/react-core";
 import { ReactNode } from "react";
@@ -16,8 +19,8 @@ import Link from "next/link";
 import { CogIcon, QuestionCircleIcon } from "@patternfly/react-icons";
 
 export default function PatternflyLayout({
-                                     children,
-                                   }: {
+                                           children
+                                         }: {
   children: ReactNode;
 }) {
   return (
@@ -60,19 +63,19 @@ export default function PatternflyLayout({
           </MastheadMain>
         </Masthead>
       }
-    sidebar={
-      <PageSidebar>
-        <PageSidebarBody>
-          <Nav aria-label="Nav">
-            <NavList>
-              <NavItem id={'connectors'} to={'/connectors/create-flow'} itemId={0}>Connectors</NavItem>
-            </NavList>
-          </Nav>
-        </PageSidebarBody>
-      </PageSidebar>
-    }
-  >
-    {children}
-  </Page>
-);
+      sidebar={
+        <PageSidebar>
+          <PageSidebarBody>
+            <Nav aria-label="Nav">
+              <NavList>
+                <NavItem id={"connectors"} to={"/connectors/create-flow"} itemId={0}>Connectors</NavItem>
+              </NavList>
+            </Nav>
+          </PageSidebarBody>
+        </PageSidebar>
+      }
+    >
+      {children}
+    </Page>
+  );
 }
