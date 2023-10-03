@@ -3,11 +3,12 @@
 import "@patternfly/patternfly/patternfly.css";
 
 import Script from 'next/script';
+import { ReactNode } from "react";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <html lang="en">
