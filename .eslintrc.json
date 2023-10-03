@@ -1,9 +1,5 @@
 {
-  "extends": [
-    "next",
-    "next/core-web-vitals",
-    "eslint:recommended"
-  ],
+  "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
   "rules": {
     "@next/next/no-before-interactive-script-outside-document": "off",
     "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]

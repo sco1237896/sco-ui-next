@@ -1,10 +1,9 @@
-'use client'
+'use client';
 import { Card, CardBody, CardTitle } from '@patternfly/react-core';
 import { Catalog, ITile } from '@kaoto-next/ui';
 import { useCallback } from 'react';
 
 export default function PlaygroundPage() {
-
   const tiles: Record<string, Array<ITile<string>>> = {
     Group1: [
       {
@@ -15,9 +14,9 @@ export default function PlaygroundPage() {
         type: 'link',
         headerTags: ['headerTag1', 'headerTag2'],
         version: '1.0.0',
-        rawObject: 'Tile 1 raw object'
-      }
-    ]
+        rawObject: 'Tile 1 raw object',
+      },
+    ],
   };
 
   const onTileClick = useCallback((tile: ITile<unknown>) => {
@@ -35,7 +34,6 @@ export default function PlaygroundPage() {
         </p>
 
         <Catalog tiles={tiles} onTileClick={onTileClick} />
-
       </CardBody>
     </Card>
   );
