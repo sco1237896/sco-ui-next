@@ -1,7 +1,6 @@
 'use client'
 
 import "@patternfly/patternfly/patternfly.css";
-import "@kaoto-next/ui/style.css";
 
 import Script from 'next/script';
 
