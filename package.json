@@ -1,6 +1,7 @@
 {
   "name": "sco-ui-next",
   "version": "0.1.0",
+  "repository": "git@github.com:sco1237896/sco-ui-next.git",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -36,6 +37,10 @@
     "sass": "^1.67.0",
     "storybook": "^7.4.5"
   },
+  "engines": {
+    "node": "18.x"
+  },
+  "packageManager": "npm@9.8.1",
   "resolutions": {
     "@types/react": "18.2.22",
     "react": "18.2.0",
