@@ -1,9 +1,9 @@
 import { Catalog, ITile } from '@kaoto-next/ui';
-import { Meta, StoryFn } from "@storybook/react";
+import { Meta, StoryFn } from '@storybook/react';
 
 export default {
-    title: "Components/Catalog",
-    component: Catalog
+  title: 'Components/Catalog',
+  component: Catalog,
 } as Meta<typeof Catalog>;
 
 const Template: StoryFn<typeof Catalog> = (args) => {
@@ -14,7 +14,7 @@ const Template: StoryFn<typeof Catalog> = (args) => {
 export const Gallery = Template.bind({});
 Gallery.args = {
   tiles: {
-    "Source Connector": [
+    'Source Connector': [
       {
         name: 'connector-type 1',
         description: 'This is the description for connector-type 1',
@@ -23,7 +23,7 @@ Gallery.args = {
         type: 'link',
         headerTags: ['headerTag1', 'headerTag2'],
         version: '1.0.0',
-        rawObject: 'Tile 1 raw object'
+        rawObject: 'Tile 1 raw object',
       },
       {
         name: 'connector-type 2',
@@ -33,10 +33,10 @@ Gallery.args = {
         type: 'link',
         headerTags: ['headerTag1', 'headerTag2'],
         version: '1.0.0',
-        rawObject: 'Tile 1 raw object'
-      }
+        rawObject: 'Tile 1 raw object',
+      },
     ],
-    "Sink Connector": [
+    'Sink Connector': [
       {
         name: 'connector-type 3',
         description: 'This is the description for connector-type 3',
@@ -45,9 +45,9 @@ Gallery.args = {
         type: 'link',
         headerTags: ['headerTag1', 'headerTag2'],
         version: '1.0.0',
-        rawObject: 'Tile 1 raw object'
-      }
-    ]
+        rawObject: 'Tile 1 raw object',
+      },
+    ],
   } as Record<string, ITile[]>,
   onTileClick: () => {
     alert('Tile clicked! Omg');

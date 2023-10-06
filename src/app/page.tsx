@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import "@patternfly/react-core/dist/styles/base.css";
-import { Button } from "@patternfly/react-core";
+import '@patternfly/react-core/dist/styles/base.css';
+import { Button } from '@patternfly/react-core';
 
 export default function Home() {
   return (

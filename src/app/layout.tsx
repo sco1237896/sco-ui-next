@@ -1,20 +1,18 @@
-'use client'
+'use client';
 
-import "@patternfly/patternfly/patternfly.css";
+import '@patternfly/patternfly/patternfly.css';
+import '@kaoto-next/ui/style.css';
 
 import Script from 'next/script';
+import { ReactNode } from 'react';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
         {children}
 
-        <Script strategy='beforeInteractive' id={'patternfly-workaround'}>
+        <Script strategy="beforeInteractive" id={'patternfly-workaround'}>
           {/* Temporary workaround for @patternfly/react-topology using global */}
           {`window.global ||= window;`}
         </Script>

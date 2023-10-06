@@ -1,11 +1,11 @@
-import { Meta, StoryFn } from "@storybook/react";
+import { Meta, StoryFn } from '@storybook/react';
 import { ITile } from '@kaoto-next/ui';
-import CreateFlow from "./page";
+import CreateFlow from './page';
 
 export default {
-  title: "CreateFlow",
-  component: CreateFlow
-} as Meta<typeof CreateFlow>
+  title: 'CreateFlow',
+  component: CreateFlow,
+} as Meta<typeof CreateFlow>;
 
 const Template: StoryFn<typeof CreateFlow> = (args) => {
   console.log(args);
@@ -15,7 +15,7 @@ const Template: StoryFn<typeof CreateFlow> = (args) => {
 export const Default = Template.bind({});
 Default.args = {
   tiles: {
-    "Source Connector": [
+    'Source Connector': [
       {
         name: 'connector-type 1',
         description: 'This is the description for connector-type 1',
@@ -24,7 +24,7 @@ Default.args = {
         type: 'link',
         headerTags: ['headerTag1', 'headerTag2'],
         version: '1.0.0',
-        rawObject: 'Tile 1 raw object'
+        rawObject: 'Tile 1 raw object',
       },
       {
         name: 'connector-type 2',
@@ -34,10 +34,10 @@ Default.args = {
         type: 'link',
         headerTags: ['headerTag1', 'headerTag2'],
         version: '1.0.0',
-        rawObject: 'Tile 1 raw object'
-      }
+        rawObject: 'Tile 1 raw object',
+      },
     ],
-    "Sink Connector": [
+    'Sink Connector': [
       {
         name: 'connector-type 3',
         description: 'This is the description for connector-type 3',
@@ -46,9 +46,9 @@ Default.args = {
         type: 'link',
         headerTags: ['headerTag1', 'headerTag2'],
         version: '1.0.0',
-        rawObject: 'Tile 1 raw object'
-      }
-    ]
+        rawObject: 'Tile 1 raw object',
+      },
+    ],
   } as Record<string, ITile[]>,
   onTileClick: () => {
     alert('Tile clicked! Omg');
