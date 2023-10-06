@@ -1,15 +1,15 @@
 import { ITile } from '@kaoto-next/ui';
 import { Meta, StoryFn } from '@storybook/react';
-import CatalogContainer from './Catalog';
+import SelectConnectorClient from '@/app/connectors/select-connector/page.client';
 
 export default {
-  title: 'Components/Catalog',
-  component: CatalogContainer,
-} as Meta<typeof CatalogContainer>;
+  title: 'Pages/SelectConnector',
+  component: SelectConnectorClient,
+} as Meta<typeof SelectConnectorClient>;
 
-const Template: StoryFn<typeof CatalogContainer> = (args) => {
+const Template: StoryFn<typeof SelectConnectorClient> = (args) => {
   console.log(args);
-  return <CatalogContainer {...args} />;
+  return <SelectConnectorClient {...args} />;
 };
 
 export const Gallery = Template.bind({});
@@ -50,7 +50,4 @@ Gallery.args = {
       },
     ],
   } as Record<string, ITile[]>,
-  onTileClick: () => {
-    alert('Tile clicked! Omg');
-  },
 };

@@ -1,5 +1,5 @@
 import { ITile } from '@kaoto-next/ui';
-import CatalogContainer from '@/components/Catalog/Catalog';
+import SelectConnectorClient from '@/app/connectors/select-connector/page.client';
 
 export interface IConnector {
   type: string;
@@ -55,7 +55,7 @@ export default async function SelectConnectorPage() {
 
   return (
     <>
-      <CatalogContainer tiles={tiles} />
+      <SelectConnectorClient tiles={tiles} />
     </>
   );
 }
