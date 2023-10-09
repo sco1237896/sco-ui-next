@@ -1,19 +1,19 @@
-import { Meta, StoryFn } from '@storybook/react';
 import { ITile } from '@kaoto-next/ui';
-import CreateFlow from './page';
+import { Meta, StoryFn } from '@storybook/react';
+import SelectConnectorClient from '@/app/connectors/select-connector/page.client';
 
 export default {
-  title: 'CreateFlow',
-  component: CreateFlow,
-} as Meta<typeof CreateFlow>;
+  title: 'Pages/SelectConnector',
+  component: SelectConnectorClient,
+} as Meta<typeof SelectConnectorClient>;
 
-const Template: StoryFn<typeof CreateFlow> = (args) => {
+const Template: StoryFn<typeof SelectConnectorClient> = (args) => {
   console.log(args);
-  return <CreateFlow {...args} />;
+  return <SelectConnectorClient {...args} />;
 };
 
-export const Default = Template.bind({});
-Default.args = {
+export const Gallery = Template.bind({});
+Gallery.args = {
   tiles: {
     'Source Connector': [
       {
@@ -50,7 +50,4 @@ Default.args = {
       },
     ],
   } as Record<string, ITile[]>,
-  onTileClick: () => {
-    alert('Tile clicked! Omg');
-  },
 };
