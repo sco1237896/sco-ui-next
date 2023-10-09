@@ -1,14 +1,15 @@
-import { Catalog, ITile } from '@kaoto-next/ui';
+import { ITile } from '@kaoto-next/ui';
 import { Meta, StoryFn } from '@storybook/react';
+import CatalogContainer from './Catalog';
 
 export default {
   title: 'Components/Catalog',
-  component: Catalog,
-} as Meta<typeof Catalog>;
+  component: CatalogContainer,
+} as Meta<typeof CatalogContainer>;
 
-const Template: StoryFn<typeof Catalog> = (args) => {
+const Template: StoryFn<typeof CatalogContainer> = (args) => {
   console.log(args);
-  return <Catalog {...args} />;
+  return <CatalogContainer {...args} />;
 };
 
 export const Gallery = Template.bind({});

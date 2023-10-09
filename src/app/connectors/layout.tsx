@@ -70,7 +70,7 @@ export default function PatternflyLayout({
               <NavList>
                 <NavItem
                   id={'connectors'}
-                  to={'/connectors/create-flow'}
+                  to={'/connectors/select-connector'}
                   itemId={0}
                 >
                   Connectors
