@@ -16,7 +16,7 @@
     "@patternfly/patternfly": "^5.1.0",
     "@patternfly/react-core": "^5.0.0",
     "@types/node": "20.8.2",
-    "@types/react": "18.2.21",
+    "@types/react": "18.2.25",
     "@types/react-dom": "18.2.10",
     "next": "13.4.19",
     "react": "18.2.0",
