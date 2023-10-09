@@ -1,20 +1,25 @@
 'use client';
-import { Catalog, ITile } from '@kaoto-next/ui';
 import {
   PageSection,
   Split,
   SplitItem,
-  TextContent,
   Text,
+  TextContent,
   Title,
 } from '@patternfly/react-core';
+import { ITile } from '@kaoto-next/ui';
+import CatalogContainer from '@/components/Catalog/Catalog';
+import { useCallback } from 'react';
 
-export interface ICreateFlowPage {
-  onTileClick: () => void;
+interface ISelectConnectorClient {
   tiles: Record<string, ITile[]>;
 }
 
-const CreateFlowPage = ({ onTileClick, tiles }: ICreateFlowPage) => {
+const SelectConnectorClient = ({ tiles }: ISelectConnectorClient) => {
+  const onTileClick = useCallback((tile: ITile) => {
+    console.log('Tile clicked', tile);
+  }, []);
+
   return (
     <>
       <PageSection variant={'light'}>
@@ -28,10 +33,10 @@ const CreateFlowPage = ({ onTileClick, tiles }: ICreateFlowPage) => {
         </Split>
       </PageSection>
       <PageSection>
-        <Catalog tiles={tiles} onTileClick={onTileClick} />
+        <CatalogContainer onTileClick={onTileClick} tiles={tiles} />
       </PageSection>
     </>
   );
 };
 
-export default CreateFlowPage;
+export default SelectConnectorClient;
