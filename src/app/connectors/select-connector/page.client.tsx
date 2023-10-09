@@ -8,7 +8,7 @@ import {
   Title,
 } from '@patternfly/react-core';
 import { ITile } from '@kaoto-next/ui';
-import CatalogContainer from '@/components/Catalog/Catalog';
+import CatalogContainer from '@/components/Catalog/CatalogContainer';
 import { useCallback } from 'react';
 
 interface ISelectConnectorClient {

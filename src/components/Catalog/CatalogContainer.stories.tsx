@@ -1,6 +1,6 @@
 import { ITile } from '@kaoto-next/ui';
 import { Meta, StoryFn } from '@storybook/react';
-import CatalogContainer from './Catalog';
+import CatalogContainer from './CatalogContainer';
 
 export default {
   title: 'Components/Catalog',
