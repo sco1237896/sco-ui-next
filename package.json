@@ -13,6 +13,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@kaoto-next/ui": "^0.2.0",
     "@patternfly/patternfly": "^5.1.0",
     "@patternfly/react-core": "^5.1.1",
     "@types/node": "20.8.2",
