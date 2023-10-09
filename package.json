@@ -14,17 +14,17 @@
   },
   "dependencies": {
     "@patternfly/patternfly": "^5.1.0",
-    "@patternfly/react-core": "^5.0.0",
+    "@patternfly/react-core": "^5.1.1",
     "@types/node": "20.8.2",
     "@types/react": "18.2.25",
     "@types/react-dom": "18.2.10",
-    "next": "13.4.19",
+    "next": "13.5.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.4.2",
+    "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
     "@storybook/addon-links": "^7.4.2",
     "@storybook/addon-onboarding": "^1.0.8",
@@ -37,7 +37,7 @@
     "next-transpile-modules": "^10.0.1",
     "prettier": "^3.0.3",
     "sass": "^1.69.0",
-    "storybook": "^7.4.5"
+    "storybook": "^7.4.6"
   },
   "engines": {
     "node": "18.x"
