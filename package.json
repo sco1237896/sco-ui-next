@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "build-storybook": "storybook build",
     "lint": "next lint",
     "prettier": "prettier --write .",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "prepare": "husky install",
+    "start": "next start",
+    "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
     "@kaoto-next/ui": "^0.2.0",
@@ -25,16 +26,18 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
     "@storybook/addon-links": "^7.4.6",
-    "@storybook/addon-onboarding": "^1.0.8",
     "@storybook/blocks": "^7.4.6",
     "@storybook/nextjs": "^7.4.6",
     "@storybook/react": "^7.4.6",
     "@storybook/testing-library": "^0.2.2",
     "eslint": "8.51.0",
     "eslint-config-next": "13.5.4",
+    "husky": "^8.0.3",
     "next-transpile-modules": "^10.0.1",
     "prettier": "^3.0.3",
     "sass": "^1.69.0",
