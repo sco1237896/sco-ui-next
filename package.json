@@ -40,7 +40,7 @@
     "husky": "^8.0.3",
     "next-transpile-modules": "^10.0.1",
     "prettier": "^3.0.3",
-    "sass": "^1.69.0",
+    "sass": "^1.69.1",
     "storybook": "^7.4.6"
   },
   "engines": {
