@@ -24,4 +24,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: chpt_dbf5c97211fca0a
-          buildScriptName: build:storybook
+          buildScriptName: build-storybook
