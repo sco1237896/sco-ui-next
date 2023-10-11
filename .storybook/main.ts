@@ -6,7 +6,6 @@ const config: StorybookConfig = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
   ],
   framework: {
@@ -22,6 +21,7 @@ const config: StorybookConfig = {
         ...config.resolve.alias,
         '@': path.resolve(__dirname, '../src'),
         react: path.resolve('./node_modules/react'),
+        'react-dom': path.resolve('./node_modules/react-dom'),
       };
     }
     return config;
