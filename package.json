@@ -1,12 +1,16 @@
 {
   "name": "sco-ui-next",
   "version": "0.1.0",
-  "repository": "git@github.com:sco1237896/sco-ui-next.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sco1237896/sco-ui-next.git"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --exit-zero-on-changes --project-token chpt_dbf5c97211fca0a",
     "lint": "next lint",
     "prettier": "prettier --write .",
     "prepare": "husky install",
@@ -35,6 +39,7 @@
     "@storybook/nextjs": "^7.4.6",
     "@storybook/react": "^7.4.6",
     "@storybook/testing-library": "^0.2.2",
+    "chromatic": "^7.2.2",
     "eslint": "8.51.0",
     "eslint-config-next": "13.5.4",
     "husky": "^8.0.3",
@@ -51,5 +56,8 @@
     "@types/react": "18.2.22",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/sco1237896/sco-ui-next/issues"
   }
 }
