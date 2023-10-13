@@ -1,6 +1,6 @@
 {
   "name": "sco-ui-next",
-  "version": "0.1.0",
+  "version": "0.1.0-dev",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sco1237896/sco-ui-next.git"
