@@ -36,7 +36,11 @@ const SelectConnectorClient = ({ tiles }: ISelectConnectorClient) => {
             </TextContent>
           </SplitItem>
         </Split>
+<<<<<<< HEAD:src/app/(connectors)/select-connector/page.client.tsx
         <FlowToggle handleToggle={handleToggle} />
+=======
+        <FlowToggle />
+>>>>>>> a0ac788 (moved FlowToggel in components):src/app/connectors/select-connector/page.client.tsx
       </PageSection>
       <PageSection>
         <CatalogContainer onTileClick={onTileClick} tiles={tiles} />

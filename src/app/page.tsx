@@ -1,7 +1,6 @@
 'use client';
 
 import '@patternfly/react-core/dist/styles/base.css';
-import FlowType from './FlowToggleItem/page';
 
 export default function Home() {
   return (
@@ -160,9 +159,6 @@ export default function Home() {
               </ul>
             </nav>
           </div>
-        </div>
-        <div>
-          < FlowType />
         </div>
       </div>
     </main>
