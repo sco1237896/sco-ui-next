@@ -1,55 +1,34 @@
 'use client';
 import {
-  Button,
   Masthead,
+  MastheadBrand,
   MastheadMain,
-  Toolbar,
-  ToolbarContent,
-  ToolbarGroup,
-  ToolbarItem,
+  MastheadToggle,
+  PageToggleButton,
 } from '@patternfly/react-core';
 import Link from 'next/link';
-import { Fragment } from 'react';
-import { CogIcon, QuestionCircleIcon } from '@patternfly/react-icons';
+import { BarsIcon } from '@patternfly/react-icons';
 
-const LayoutHeader = () => {
-  const toolbarItems = (
-    <Fragment>
-      <ToolbarItem>
-        <Button aria-label="Settings" variant={'plain'} icon={<CogIcon />} />
-      </ToolbarItem>
-      <ToolbarItem>
-        <Button
-          aria-label="Help"
-          variant={'plain'}
-          icon={<QuestionCircleIcon />}
-        />
-      </ToolbarItem>
-    </Fragment>
-  );
+interface ILayoutHeader {
+  handleNavToggle: () => void;
+}
 
+const LayoutHeader = ({ handleNavToggle }: ILayoutHeader) => {
   return (
-    <Masthead id="stack-masthead" display={{ default: 'stack' }}>
+    <Masthead>
+      <MastheadToggle>
+        <PageToggleButton
+          variant="plain"
+          aria-label="Global navigation"
+          onClick={handleNavToggle}
+        >
+          <BarsIcon />
+        </PageToggleButton>
+      </MastheadToggle>
       <MastheadMain>
-        <Link href={'/'} className={'pf-v5-c-masthead_brand pf-v5-u-mx-xl'}>
-          Smart Connectors
-        </Link>
-        <Toolbar id="toolbar" isFullHeight isStatic>
-          <ToolbarContent>
-            <ToolbarGroup
-              variant="icon-button-group"
-              align={{ default: 'alignRight' }}
-              spacer={{ default: 'spacerNone', md: 'spacerMd' }}
-            >
-              <ToolbarGroup
-                variant="icon-button-group"
-                visibility={{ default: 'hidden', lg: 'visible' }}
-              >
-                {toolbarItems}
-              </ToolbarGroup>
-            </ToolbarGroup>
-          </ToolbarContent>
-        </Toolbar>
+        <MastheadBrand>
+          <Link href={'/'}>Smart Connectors</Link>
+        </MastheadBrand>
       </MastheadMain>
     </Masthead>
   );
