@@ -14,7 +14,7 @@ import {
   ToolbarGroup,
   ToolbarItem,
 } from '@patternfly/react-core';
-import { ReactNode } from 'react';
+import { Fragment, ReactNode } from 'react';
 import Link from 'next/link';
 import { CogIcon, QuestionCircleIcon } from '@patternfly/react-icons';
 
@@ -23,6 +23,32 @@ export default function PatternflyLayout({
 }: {
   children: ReactNode;
 }) {
+  const navItems = (
+    <Fragment>
+      <NavItem id={'landingPage)'} to={'/'} itemId={0}>
+        Landing Page
+      </NavItem>
+      <NavItem id={'selectConnector)'} to={'/select-connector'} itemId={1}>
+        Select Connector
+      </NavItem>
+    </Fragment>
+  );
+
+  const toolbarItems = (
+    <Fragment>
+      <ToolbarItem>
+        <Button aria-label="Settings" variant={'plain'} icon={<CogIcon />} />
+      </ToolbarItem>
+      <ToolbarItem>
+        <Button
+          aria-label="Help"
+          variant={'plain'}
+          icon={<QuestionCircleIcon />}
+        />
+      </ToolbarItem>
+    </Fragment>
+  );
+
   return (
     <Page
       header={
@@ -42,20 +68,7 @@ export default function PatternflyLayout({
                     variant="icon-button-group"
                     visibility={{ default: 'hidden', lg: 'visible' }}
                   >
-                    <ToolbarItem>
-                      <Button
-                        aria-label="Settings"
-                        variant={'plain'}
-                        icon={<CogIcon />}
-                      />
-                    </ToolbarItem>
-                    <ToolbarItem>
-                      <Button
-                        aria-label="Help"
-                        variant={'plain'}
-                        icon={<QuestionCircleIcon />}
-                      />
-                    </ToolbarItem>
+                    {toolbarItems}
                   </ToolbarGroup>
                 </ToolbarGroup>
               </ToolbarContent>
@@ -67,15 +80,7 @@ export default function PatternflyLayout({
         <PageSidebar>
           <PageSidebarBody>
             <Nav aria-label="Nav">
-              <NavList>
-                <NavItem
-                  id={'selectConnector)'}
-                  to={'/select-connector'}
-                  itemId={0}
-                >
-                  Select Connector
-                </NavItem>
-              </NavList>
+              <NavList>{navItems}</NavList>
             </Nav>
           </PageSidebarBody>
         </PageSidebar>
