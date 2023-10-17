@@ -6,9 +6,21 @@ export default {
   component: LayoutSidebar,
 } as Meta<typeof LayoutSidebar>;
 
-const Template: StoryFn<typeof LayoutSidebar> = (_args) => {
-  return <LayoutSidebar />;
+const Template: StoryFn<typeof LayoutSidebar> = (args) => {
+  return <LayoutSidebar pathname={args.pathname} />;
 };
 
-export const Default = Template.bind({});
-Default.args = {};
+export const LandingPage = Template.bind({});
+LandingPage.args = {
+  pathname: '/',
+};
+
+export const SelectConnector = Template.bind({});
+SelectConnector.args = {
+  pathname: '/select-connector',
+};
+
+export const Inactive = Template.bind({});
+Inactive.args = {
+  pathname: '',
+};

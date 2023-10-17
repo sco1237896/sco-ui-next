@@ -1,20 +1,17 @@
 'use client';
 import { Page } from '@patternfly/react-core';
-import { FormEvent, ReactNode, useState } from 'react';
+import { ReactNode, useState } from 'react';
 import LayoutHeader from '@/components/Layout/LayoutHeader';
 import LayoutSidebar from '@/components/Layout/LayoutSidebar';
+import { usePathname } from 'next/navigation';
 
 export default function PatternflyLayout({
   children,
 }: {
   children: ReactNode;
 }) {
-  const [activeItem, setActiveItem] = useState(1);
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-
-  const onNavSelect = (_event: FormEvent<HTMLInputElement>, result: any) => {
-    setActiveItem(result.itemId);
-  };
+  const pathname = usePathname();
 
   return (
     <Page
@@ -27,7 +24,7 @@ export default function PatternflyLayout({
         />
       }
       sidebar={
-        <LayoutSidebar activeId={activeItem} sidebarNavOpen={isSidebarOpen} />
+        <LayoutSidebar pathname={pathname} sidebarNavOpen={isSidebarOpen} />
       }
     >
       {children}
