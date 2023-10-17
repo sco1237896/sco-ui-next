@@ -1,5 +1,5 @@
 import { ITile } from '@kaoto-next/ui';
-import SelectConnectorClient from '@/app/connectors/select-connector/page.client';
+import SelectConnectorClient from '@/app/(connectors)/select-connector/page.client';
 
 export interface IConnector {
   type: string;
@@ -13,9 +13,9 @@ export interface IConnector {
 }
 
 async function getConnectors() {
-  // TODO: mock API request using proper data shape for connectors
+  // TODO: mock API request using proper data shape for (connectors)
   // const res = await fetch('https://jsonplaceholder.typicode.com/users');
-  // const connectors: IConnector[] = await res.json();
+  // const (connectors): IConnector[] = await res.json();
   const sourceConnectors: IConnector[] = [
     {
       name: 'example-source-connector',

@@ -69,11 +69,11 @@ export default function PatternflyLayout({
             <Nav aria-label="Nav">
               <NavList>
                 <NavItem
-                  id={'connectors'}
-                  to={'/connectors/select-connector'}
+                  id={'selectConnector)'}
+                  to={'/select-connector'}
                   itemId={0}
                 >
-                  Connectors
+                  Select Connector
                 </NavItem>
               </NavList>
             </Nav>
