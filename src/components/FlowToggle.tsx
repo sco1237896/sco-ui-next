@@ -1,5 +1,3 @@
-"use client"
-
 import { Title, ToggleGroup, ToggleGroupItem } from '@patternfly/react-core';
 import '@patternfly/react-core/dist/styles/base.css';
 import { useState } from 'react';
