@@ -43,7 +43,7 @@ const FormComponent = ({ defaultState = false }) => {
 };
 
 export default {
-  title: 'Components/ExampleForm',
+  title: 'Components/Form',
   component: FormComponent,
 } as Meta<typeof FormComponent>;
 

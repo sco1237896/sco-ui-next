@@ -1,6 +1,6 @@
 import { ITile } from '@kaoto-next/ui';
 import { Meta, StoryFn } from '@storybook/react';
-import SelectConnectorClient from '@/app/(connectors)/select-connector/page.client';
+import SelectConnectorClient from '@/app/connectors/select-connector/page.client';
 
 export default {
   title: 'Pages/SelectConnector',
