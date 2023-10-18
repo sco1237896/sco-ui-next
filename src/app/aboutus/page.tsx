@@ -3,7 +3,7 @@
 import React from 'react';
 
 const Aboutus = () => {
-  return <div>Aboutus</div>;
+  return <div>About</div>;
 };
 
 export default Aboutus;
