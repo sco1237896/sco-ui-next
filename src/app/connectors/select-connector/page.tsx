@@ -1,5 +1,5 @@
 import { ITile } from '@kaoto-next/ui';
-import SelectConnectorClient from '@/app/(connectors)/select-connector/page.client';
+import SelectConnectorClient from '@/app/connectors/select-connector/page.client';
 
 export interface IConnector {
   type: string;
