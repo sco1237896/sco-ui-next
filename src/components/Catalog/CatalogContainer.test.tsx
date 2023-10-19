@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 import { render, screen } from '@testing-library/react';
-import Gallery from '../../app/connectors/select-connector/page.client.stories';
+import Gallery from '@/app/(connectors)/select-connector/page.client.stories';
 import CatalogContainer from '@/components/Catalog/CatalogContainer';
 
 describe('CatalogContainer', () => {
