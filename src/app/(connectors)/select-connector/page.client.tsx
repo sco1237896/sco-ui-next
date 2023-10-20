@@ -1,4 +1,7 @@
 'use client';
+import CatalogContainer from '@/components/Catalog/CatalogContainer';
+import FlowToggle from '@/components/FlowToggle';
+import { ITile } from '@kaoto-next/ui';
 import {
   PageSection,
   Split,
@@ -7,8 +10,6 @@ import {
   TextContent,
   Title,
 } from '@patternfly/react-core';
-import { ITile } from '@kaoto-next/ui';
-import CatalogContainer from '@/components/Catalog/CatalogContainer';
 import { useCallback } from 'react';
 
 interface ISelectConnectorClient {
@@ -19,6 +20,10 @@ const SelectConnectorClient = ({ tiles }: ISelectConnectorClient) => {
   const onTileClick = useCallback((tile: ITile) => {
     console.log('Tile clicked', tile);
   }, []);
+
+  const handleToggle = (id: string) => {
+    console.log('Thanks for letting me know it has been toggled ' + id);
+  };
 
   return (
     <>
@@ -31,6 +36,7 @@ const SelectConnectorClient = ({ tiles }: ISelectConnectorClient) => {
             </TextContent>
           </SplitItem>
         </Split>
+        <FlowToggle handleToggle={handleToggle} />
       </PageSection>
       <PageSection>
         <CatalogContainer onTileClick={onTileClick} tiles={tiles} />
