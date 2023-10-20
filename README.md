@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/sco1237896/sco-ui-next/graph/badge.svg?token=TLC1CB7M8X)](https://codecov.io/gh/sco1237896/sco-ui-next)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Requirements
